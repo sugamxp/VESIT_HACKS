@@ -17,6 +17,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.ArrayList;
+
 import static com.google.firebase.auth.FirebaseAuth.*;
 
 public class MainActivity extends AppCompatActivity {
@@ -37,9 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_dashboard:
                     selected = new FragmentDash();
                     break;
-                case R.id.navigation_notifications:
-                    selected = new FragmentNotify();
-                    break;
+
             }
             getFragmentManager().beginTransaction().replace(R.id.fragment_layout, selected).commit();
             return true;
