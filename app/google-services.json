@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "697754319705",
+    "firebase_url": "https://vesithacks.firebaseio.com",
+    "project_id": "vesithacks",
+    "storage_bucket": "vesithacks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697754319705:android:54472cb3394464b9",
+        "android_client_info": {
+          "package_name": "com.example.sumeetharyani.asset_manager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697754319705-2bivvs458poovl84rbafmv8jcr2i8968.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sumeetharyani.asset_manager",
+            "certificate_hash": "3f909ee0ffcccca7dc62f4b472ba61bbd97490b4"
+          }
+        },
+        {
+          "client_id": "697754319705-5kdoudet0sgcuf1ur8jus07r29iuuhq0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXowAuMI9ECasyaJr4hKGIkGSKp2xRwNg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "697754319705-5kdoudet0sgcuf1ur8jus07r29iuuhq0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
