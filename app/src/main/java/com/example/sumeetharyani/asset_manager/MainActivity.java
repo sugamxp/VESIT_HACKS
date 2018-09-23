@@ -1,6 +1,7 @@
 package com.example.sumeetharyani.asset_manager;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -8,6 +9,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+
+import static com.google.firebase.auth.FirebaseAuth.*;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -58,8 +68,8 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         switch (id) {
             case (R.id.action_signOut):
-/*
-                FirebaseAuth.getInstance().signOut();
+
+                getInstance().signOut();
                 GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                         .requestEmail()
                         .build();
@@ -69,12 +79,12 @@ public class MainActivity extends AppCompatActivity {
                         .addOnCompleteListener(this, new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
-                                Intent i = new Intent(getApplicationContext(), LoginActivity.class);
+                                Intent i = new Intent(getApplicationContext(), SignIn.class);
                                 startActivity(i);
                                 finish();
 
                             }
-                        });*/
+                        });
                 return true;
             case (R.id.action_settings):
 
