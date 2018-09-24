@@ -9,6 +9,6 @@
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
-        android:title="settings"
+        android:title="Chat"
         app:showAsAction="never" />
 </menu>
